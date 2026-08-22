@@ -63,9 +63,9 @@
 }
 
 @media(max-width:600px){
-  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  html,body{width:100%;max-width:100%;overflow-x:clip}
   img,svg,video,canvas{max-width:100%;height:auto}
-  .site-header,main,footer{max-width:100%}
+  .site-header,main,footer,.hero,.ticker,.intro,.catalog,.engineering,.industries,.reviews,.certificates,.proof,.contact{width:100%;max-width:100%;min-width:0}
   main,footer{overflow:hidden}
   .hero-grid,.contact-grid{right:0;overflow:hidden}
   .site-header{padding:0 5vw}
@@ -74,8 +74,8 @@
   .hero{padding-left:5vw;padding-right:5vw;min-height:820px}
   .hero-copy{z-index:5}
   .hero-lead{max-width:300px;line-height:1.55}
-  .hero-machine{width:100%;right:0;bottom:125px;opacity:.96}
-  .hero-foot{left:5vw;width:90%;gap:10px}
+  .hero-machine{width:92%;right:4%;bottom:125px;opacity:.96}
+  .hero-foot{left:5vw;width:90%;max-width:90%;gap:8px}
   .hero-foot div{min-width:0;gap:6px}
   .hero-foot span{max-width:65px;line-height:1.25}
 
@@ -84,7 +84,7 @@
   .engineering-head{width:100%;max-width:330px}
   .engineering-head h2{font-size:clamp(28px,8vw,34px);margin:22px 0 16px}
   .step-description{max-width:285px;line-height:1.55}
-  .exploded-wrap{width:100%;right:0;top:59%;transform:translateY(-42%)}
+  .exploded-wrap{width:92%;right:4%;top:59%;transform:translateY(-42%)}
   .exploded-pump{width:100%;max-width:100%}
   .engineering-progress{bottom:6vh}
 
@@ -92,18 +92,21 @@
   .catalog-head{margin-bottom:38px}
   .catalog-head p{font-size:13px;line-height:1.6}
   .pump-card{padding:26px 22px;min-height:300px}
+  .pump-card-top,.pump-specs,.pump-cta{min-width:0;max-width:100%}
   .pump-specs li{font-size:11px}
   .pump-specs li b{max-width:55%;line-height:1.35}
   .catalog-more{font-size:10px;line-height:1.5}
 
   .reviews-head{margin-bottom:38px}
   .review-card{padding:26px 22px;min-height:0}
+  .review-card p{overflow-wrap:anywhere}
   .review-card p{font-size:13px;line-height:1.6}
   .cert-badge{padding:22px 20px}
   .contact-copy p{font-size:13px;line-height:1.6}
   .contact-form label{margin-bottom:23px}
   .contact-form .button{gap:18px}
   .contact-form input,.contact-form textarea{max-width:100%}
+  .contact-form{min-width:0;max-width:100%}
   .contact-details b{overflow-wrap:anywhere}
   .industry-row h3,.industry-row p,.review-author span,.pump-specs li b{overflow-wrap:anywhere}
 }
